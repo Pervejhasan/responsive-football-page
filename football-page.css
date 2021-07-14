@@ -6,7 +6,6 @@
      box-sizing: border-box; 
 }
 
-
 body{
    
     background-color: #ECEDEF;
@@ -27,11 +26,6 @@ margin-left:50px;
    
 }
 
-
-
-
-
-
 nav{
     display: flex;
     height: 44px;
@@ -41,9 +35,7 @@ nav{
      margin-left: 156px;
      /* border: 2px solid red; */
     
-   
 }
-
 
 .list{
 width:590px ;
@@ -53,8 +45,6 @@ height: 24px;
 
  ul li{
 display: inline-block;
-
-/* border: 2px solid black; */
 border-radius: 3px;
 padding-right: 31px;
 margin: 10px 0;
@@ -77,7 +67,6 @@ ul li a:hover::before{
     width: 73px;
 }
 
-
 ul li:last-child{
     padding-right: 0;
 }
@@ -89,7 +78,6 @@ ul>li>a{
     font-size: 16px;
     color: #fff;
     line-height: 24px;
-
 }
 .login span {
 color: #fff;
@@ -98,8 +86,6 @@ font-size: 16px;
 text-transform: capitalize;
 
 }
-
-
 .login{
     height: 44px;
     width: 123px;
@@ -116,7 +102,6 @@ border-radius: 50px;
     margin-left: 20px;
     margin-top: 14px;
     margin-bottom: 10px;
-   
 
 }
 
@@ -241,7 +226,6 @@ border-radius: 8px ;
   
 }
 
-
 .details h2{
     top: 16px;
     position: relative;
@@ -267,76 +251,78 @@ end style main portion-1
 
 
 /*------------------ 
-start style main portion-2
+start style main portion-3
 -------------------- */
-.main-section-2{
-  margin-bottom: 153px;
-}
 
-.main-section2{
+.main-section-3{
+  
+    position: relative;
+    
     display: flex;
-    top: 165px;
-    position: relative;
-    justify-content: space-around;
-    
+    justify-content: center;
+} 
+
+.video-container{
+    margin-bottom: 100px;
+    margin-top: 100px;
+position: absolute;
+display: flex;
+justify-content:space-around;
+
 }
 
+.side-video{
+   display: inline-block;
+    /* grid-row-gap: 20px; */
 
-.main-section2 .div-1{
-height: 309px;
-width: 469px;
-left: 182px;
- position: absolute;
-top:71px ;
 }
-
-.main-section2 .div-1 h2{
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 60px;
-}
-
-.main-section2 .div-1 p{
-    font-size: 16px;
-    line-height: 28px;
-    color: #6C6C6C;
+.video-size{
+    margin-bottom: 15px;
+    margin-left: 100px;
    
+    border-radius: 3px;
 
 }
 
-
-.main-section2 .div-2{
-    position: relative;
-    left: 717px;
-}
-.main-section2 img{
-    width: 567px;
-    height: 427px;
-    
+.v-round{
+    border-radius: 5px;
 }
 
+.video-title{
+    font-size: 30px;
+    font-weight: 700;
+    width: 900px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.side-video-titel{
+width: 280px;
+cursor: pointer;
+text-decoration: underline;
+}
+.champion{
+    width: 900px;
+    margin-top: 100px;
+}
+.champion img{
+width: 500px;
+border-radius: 5px;
+cursor: pointer;
+transition: transform 0.5s;
+}
+.champion img:hover{
+    transform: translateY(-5px);
+}
 
-
-
-
+.champion p::first-letter{
+font-size:32px;
+color: red;
+font-weight: bold;
+}
 
 /*------------------ 
-start style main portion-2
+end style main portion-3
 -------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*------------------
@@ -344,20 +330,18 @@ start style main portion-2
  ------------------- */
 
 .footer{
-width: 483px;
-height: 213px;
-left: 475px;
-top: 158px;
+
+ height: 213px; 
+top: 1300px;
 position: relative;
-
-
+background-color:#FFFFFF ;
 
 }
 
 .footer img{
     width: 483px;
     height: 110px;
-
+    margin-left: 475px;
 }
 
 .footer .logo1{
@@ -390,7 +374,111 @@ position: relative;
     color:#F60000;
 }
 
-
 /*------------------
  end stlye footer
  ------------------- */
+
+
+
+/*------------------ 
+start style main portion-2
+-------------------- */
+.main-section-2{
+  margin-bottom: 153px;
+}
+
+.main-section2{
+    display: flex;
+    top: 165px;
+    position: relative;
+    justify-content: space-around;
+    
+}
+.main-section2 .div-1{
+height: 309px;
+width: 469px;
+left: 182px;
+ position: absolute;
+top:71px ;
+}
+.main-section2 .div-1 h2{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+}
+.main-section2 .div-1 p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+   
+
+}
+.main-section2 .div-2{
+    position: relative;
+    left: 717px;
+}
+.main-section2 img{
+    width: 567px;
+    height: 427px;
+    
+}
+
+/*------------------ 
+end style main portion-2
+-------------------- */
+
+/* ---------------------------
+media query for mobile device 
+----------------------------------*/
+
+@media only screen and (max-width:688px){
+    .players{
+    
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        }
+        .main-section2{
+        display: flex;
+        flex-direction: column;
+        
+        
+        }
+        .main-section2 .div-1{
+            width:80%;
+            margin-bottom: 200px;
+        }
+        .video-container{
+            display: flex;
+            flex-direction: column;
+        }
+        .video-container  .side-video{
+        
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }     
+        
+        .video-container .champion{
+        display: flex;
+        flex-direction: column;
+        
+        }
+    .video-container .large-video{
+    width:500px;
+    
+    }
+    
+        .champion p{
+    width: 60%;
+    
+        }
+        .footer{
+        width: 100%;
+        position: relative;
+        top: 2150px; 
+        
+        }
+        
+ } 
+    
+
+
