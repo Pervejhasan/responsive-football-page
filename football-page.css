@@ -8,9 +8,13 @@
 
 
 body{
-    /* width: 1440px; */
-    background-color: #5a7ec7;
+   
+    background-color: #ECEDEF;
 }
+
+/*------------------ 
+start style header portion
+-------------------- */
 header{
 margin-left:50px;
    
@@ -20,6 +24,7 @@ margin-left:50px;
     height: 677px;
     width: 1440px;
     position: relative;
+   
 }
 
 
@@ -31,11 +36,10 @@ nav{
     display: flex;
     height: 44px;
     width:1163px;
-   
-    border: 2px solid red;
      margin-top: 42px;
      position: absolute;
      margin-left: 156px;
+     /* border: 2px solid red; */
     
    
 }
@@ -93,14 +97,13 @@ margin-right: 24px;
 font-size: 16px;
 text-transform: capitalize;
 
-
 }
 
 
 .login{
     height: 44px;
     width: 123px;
-    border: 3px solid rgb(10, 8, 8);
+  
 background-color: #E02C6D;
 margin-left: 450px;
 cursor: pointer;
@@ -170,7 +173,7 @@ line-height: 80px;
 
     top: 153px;
     left:743px ;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     height: 438px;
     width: 556px;
     position: absolute;
@@ -181,6 +184,7 @@ line-height: 80px;
     width: 556px;
     transition: transform 0.5s;
     cursor: pointer;
+   
  
 }
 
@@ -189,4 +193,204 @@ line-height: 80px;
     
 }
 
+/*------------------ 
+end style header portion
+-------------------- */
 
+
+/*------------------ 
+start style main portion-1
+-------------------- */
+.main-section-1{
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+.players{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:27px;
+    grid-column-gap:30px;
+    
+   
+}
+
+.players .image{
+width: 300px;
+height: 256px;
+
+border-radius: 8px ;
+
+}
+
+.players .details{
+    width: 300px;
+    height: 160px;
+}
+.player{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px 33px;
+    width: 330px;
+    height: 474px;
+    border-radius: 8px;
+    cursor: pointer;
+  
+  
+}
+
+
+.details h2{
+    top: 16px;
+    position: relative;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.details p{
+    top: 10px;
+    position: relative;
+    font-size: 16px;
+  line-height: 20px;
+  color:#6C6C6C;
+  font-weight: 400;
+
+}
+
+
+/*------------------ 
+end style main portion-1
+-------------------- */
+
+
+/*------------------ 
+start style main portion-2
+-------------------- */
+.main-section-2{
+  margin-bottom: 153px;
+}
+
+.main-section2{
+    display: flex;
+    top: 165px;
+    position: relative;
+    justify-content: space-around;
+    
+}
+
+
+.main-section2 .div-1{
+height: 309px;
+width: 469px;
+left: 182px;
+ position: absolute;
+top:71px ;
+}
+
+.main-section2 .div-1 h2{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.main-section2 .div-1 p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+   
+
+}
+
+
+.main-section2 .div-2{
+    position: relative;
+    left: 717px;
+}
+.main-section2 img{
+    width: 567px;
+    height: 427px;
+    
+}
+
+
+
+
+
+
+/*------------------ 
+start style main portion-2
+-------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------
+ start stlye footer
+ ------------------- */
+
+.footer{
+width: 483px;
+height: 213px;
+left: 475px;
+top: 158px;
+position: relative;
+
+
+
+}
+
+.footer img{
+    width: 483px;
+    height: 110px;
+
+}
+
+.footer .logo1{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer .icon{
+    font-size:32px ;
+    margin-right: 14px;
+    color: #9B9FAF;
+    transition: color 0.3s;
+    cursor:pointer;
+}
+.facbook:hover{
+    color:#1773EA;
+}
+.instagram:hover{
+    color:#C0296B;
+}
+.twitter:hover{
+    color:#1C9CEA;
+}
+.youtube:hover{
+    color:#F60000;
+}
+
+
+/*------------------
+ end stlye footer
+ ------------------- */
